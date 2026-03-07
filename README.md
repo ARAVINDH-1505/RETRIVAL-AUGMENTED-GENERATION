@@ -28,30 +28,6 @@ No external API keys or cloud LLM services are required.
 - Grounded answers with document context
 - Fully **offline capable**
 
----
-
-# Project Structure
-RAG
-├── app/
-│ ├── DATA
-│ └── GENERATION
-│ ├── INGESTION
-│ └── RETRIEVAL
-│ └── SERVICES
-|
-│ └── main.py
-├── vector_db/
-│
-├── build_index.py
-│
-├── requirements.txt
-│
-├── LICENSE
-│
-└── README.md
-
-
----
 
 # System Architecture
 
@@ -89,6 +65,7 @@ flowchart LR
     style Runtime fill:#e8f5e9,stroke:#2e7d32
 
 How It Works
+
 1️⃣ Document Indexing
 
 The script build_index.py performs the indexing pipeline.
@@ -175,15 +152,13 @@ Run the RAG Application
 
 From project root:
 
-python -m app
+uvicorn app.main:app-reload
 
-or
-
-python app/main.py
 Example Queries
-Summarize the main ideas in my document
-What are the key steps mentioned for building a RAG pipeline?
-Explain the configuration for the embeddings model
+What is machine learining?
+What are the key steps mentioned for building a ML model?
+Explain the configuration for the model
+(As I given the Machine Learning for absolute beginner book)
 
 The system will retrieve relevant document chunks and generate a context-aware answer.
 
