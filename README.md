@@ -155,9 +155,9 @@ From project root:
 uvicorn app.main:app-reload
 
 Example Queries
-What is machine learining?
-What are the key steps mentioned for building a ML model?
-Explain the configuration for the model
+-What is machine learining?
+-What are the key steps mentioned for building a ML model?
+-Explain the configuration for the model
 (As I given the Machine Learning for absolute beginner book)
 
 The system will retrieve relevant document chunks and generate a context-aware answer.
