@@ -7,3 +7,5 @@ uvicorn
 sentence-transformers
 pypdf
 ollama
+streamlit
+requests
